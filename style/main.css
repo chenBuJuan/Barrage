@@ -1,0 +1,121 @@
+#container{
+    font-size: 0;
+    font-family: 'Microsoft Yahei';
+    width: 50%;
+    min-width:500px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    margin-top: -250px;
+}
+
+#area{
+    width: 80%;
+    height: 320px;
+    font-size: 14px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+#area .msg{
+    height: 20px;
+    white-space: nowrap;
+    display: inline-block;
+    position: absolute;
+    animation-name: barrage;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+#barrage{
+    width: 80%;
+    height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+#barMsg{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    outline: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+
+    transition: width 0.5s ease-in-out 0s;
+}
+#barMsg:focus{
+    width: 100%;
+}
+
+#controller{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+#controller button{
+    width: 42%;
+    height: 30px;
+    font-size: 14px;
+    min-width: 100px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #357ae8;
+    box-sizing: border-box;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    
+    transition: background-color 0.3s ease-in-out 0s;
+}
+#controller button:hover{
+    background-color: #2f5bb7;
+}
+#controller button:last-of-type{
+    margin: 0 2%;
+}
+#switch{
+    width: 12%;
+    height: 30px;
+    min-width: 60px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#above{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 10;
+
+    transition: all 0.5s ease-in-out 0s;
+}
+#below{
+    height: 26px;
+    width: 44px;
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    margin-left: -22px;
+    border-radius: 10px;
+    background-color: #e6501e;
+    border: 1px solid #e6501e;
+    box-sizing: border-box;
+    z-index: 1;
+    
+    transition: all 0.5s ease-in-out 0s;
+}
